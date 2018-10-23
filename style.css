@@ -1,0 +1,673 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: black;
+    height: 10vh;
+}
+
+.title h3 {
+    font-family: "Permanent Marker";
+    font-size: 2em;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container svg {
+    width: 60vw;
+    height: auto;
+    fill: none;
+    stroke: white;
+    stroke-width: 5;
+}
+
+.container tspan > tspan {
+    stroke-dasharray: 1500;
+    stroke-dashoffset: -1500;
+}
+.container tspan > tspan:nth-of-type(1) {
+    -webkit-animation: draw 300ms 150ms forwards;
+    animation: draw 300ms 150ms forwards;
+}
+.container tspan > tspan:nth-of-type(2) {
+    -webkit-animation: draw 300ms 300ms forwards;
+    animation: draw 300ms 300ms forwards;
+}
+.container tspan > tspan:nth-of-type(3) {
+    -webkit-animation: draw 300ms 450ms forwards;
+    animation: draw 300ms 450ms forwards;
+}
+.container tspan > tspan:nth-of-type(4) {
+    -webkit-animation: draw 300ms 600ms forwards;
+    animation: draw 300ms 600ms forwards;
+}
+.container tspan > tspan:nth-of-type(5) {
+    -webkit-animation: draw 300ms 750ms forwards;
+    animation: draw 300ms 750ms forwards;
+}
+.container tspan > tspan:nth-of-type(6) {
+    -webkit-animation: draw 300ms 900ms forwards;
+    animation: draw 300ms 900ms forwards;
+}
+.container tspan > tspan:nth-of-type(7) {
+    -webkit-animation: draw 300ms 1050ms forwards;
+    animation: draw 300ms 1050ms forwards;
+}
+.container tspan > tspan:nth-of-type(8) {
+    -webkit-animation: draw 300ms 1200ms forwards;
+    animation: draw 300ms 1200ms forwards;
+}
+.container tspan > tspan:nth-of-type(9) {
+    -webkit-animation: draw 300ms 1350ms forwards;
+    animation: draw 300ms 1350ms forwards;
+}
+.container tspan > tspan:nth-of-type(10) {
+    -webkit-animation: draw 300ms 1500ms forwards;
+    animation: draw 300ms 1500ms forwards;
+}
+.container tspan > tspan:nth-of-type(11) {
+    -webkit-animation: draw 300ms 1650ms forwards;
+    animation: draw 300ms 1650ms forwards;
+}
+.container tspan > tspan:nth-of-type(12) {
+    -webkit-animation: draw 300ms 1800ms forwards;
+    animation: draw 300ms 1800ms forwards;
+}
+
+@-webkit-keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.header-nav {
+    position: fixed;
+    width: 57vw;
+    height: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 15px;
+}
+
+.header-nav a {
+    padding-top: 2vh;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    /* font-weight: lighter; */
+    color: white;
+    text-shadow: 4px 4px 8px #000000;
+
+}
+.header-nav a:hover {
+    background-color: black;
+    border-radius: 10%;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    padding-top: 25vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.down-arrow {
+    padding-top: 25vh;
+    padding-bottom: 30vh;
+    position: 0;
+    width: 10px;
+}
+
+.modal-body a,
+#in-link, #git-hub {
+    text-decoration: none;
+    color: coral;
+}
+
+.modal-body {
+    border: solid coral;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d1/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg");
+
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+    text-shadow: 4px 4px 8px #000000;
+    bottom: 0;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timeline ul {
+    background: #456990;
+    padding-bottom: 1vh;
+}
+
+.timeline ul li {
+    list-style-type: none;
+    position: relative;
+    width: 6px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: #fff;
+}
+
+.timeline ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: inherit;
+}
+
+.timeline ul li div {
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
+    background: coral;
+    border-radius: 10px;
+}
+
+.timeline ul li div::before {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+    left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent coral transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent coral;
+}
+
+time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+    transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+    background: coral;
+}
+
+.timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+    transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+    .timeline ul li div {
+        width: 250px;
+    }
+    .timeline ul li:nth-child(even) div {
+        left: -289px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* .timeline ul li {
+        margin-left: 20px;
+    } */
+    .timeline {
+        margin-left: -150px;
+    }
+    .timeline ul li div {
+        width: 50vw;
+        
+    }
+    .timeline ul li:nth-child(even) div {
+        left: 45px;
+        position: relative;
+        left: 30px;
+     
+    }
+    .timeline ul li:nth-child(even) div::before {
+        left: -15px;
+        border-width: 8px 16px 8px 0;
+        border-color: transparent coral transparent transparent;
+    }
+
+    #resume-img{
+        width:75vw;
+    }
+
+    .contact-and-pic{
+        display: flex;
+        /* flex-flow: row; */
+        justify-content: center;
+        /* height: 40vh; */
+        margin-top: 0px;
+        margin-bottom: 35vh;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contact-img{
+        /* width: 50vw; */
+        padding-bottom: 5vw;
+    }
+    .title h3 {
+        font-family: "Permanent Marker";
+        font-size: 1em;
+    }
+    
+    .header-nav a {
+        font-size: 1em;
+    }
+    .down-arrow {
+        padding-bottom: 40vh;
+    }
+}
+.hidden {
+    display: none;
+}
+
+.button {
+    background: coral;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+}
+
+.button:hover {
+    background: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: black;
+    margin: 20% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: coral;
+    padding: 15px;
+    color: #fff;
+}
+
+.modal-body {
+    padding: 10px 20px;
+}
+
+.modal-body img,
+.modal-body p,
+.modal-body a {
+    padding-bottom: 2vh;
+}
+
+#travel-bug-gif {
+    width: 50vw;
+}
+
+.modal-footer {
+    background: coral;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.closeBtn,
+.closeBtnTwo,
+.closeBtnThree,
+.closeBtnFour,
+.closeBtnFive,
+.closeBtnSix,
+.closeBtnSeven
+ {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+}
+
+.closeBtn:hover,
+.closeBtn:focus,
+.closeBtnTwo:hover,
+.closeBtnTwo:focus,
+.closeBtnThree:hover,
+.closeBtnThree:focus,
+.closeBtnFour:hover,
+.closeBtnFour:focus,
+.closeBtnFive:hover,
+.closeBtnFive:focus, 
+.closeBtnSix:hover,
+.closeBtnSix:focus,
+.closeBtnSeven:hover,
+.closeBtnSeven:focus
+{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.layers {
+    /* display: contents; */
+    position: absolute;
+    left: 42.5vw;
+    top: 70vh;
+    transform: scaleY(0.5) scaleX(1.5);
+    animation: scale ease-in-out 10s infinite;
+}
+
+@keyframes scale {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 15vh)
+            scale(1);
+    }
+}
+.layers p {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    background: rgba(255, 0, 0, 0.25);
+}
+
+.layers p:nth-child(0) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -102vh);
+    filter: hue-rotate(0deg);
+    animation: slide-6 ease-in-out 10s infinite;
+}
+
+@keyframes slide-6 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 102vh)
+            scale(0.2);
+    }
+}
+.layers p:nth-child(1) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -85vh);
+    filter: hue-rotate(36deg);
+    animation: slide-5 ease-in-out 10s infinite;
+}
+
+@keyframes slide-5 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 85vh)
+            scale(0.25);
+    }
+}
+.layers p:nth-child(2) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -68vh);
+    filter: hue-rotate(72deg);
+    animation: slide-4 ease-in-out 10s infinite;
+}
+
+@keyframes slide-4 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 68vh)
+            scale(0.3);
+    }
+}
+.layers p:nth-child(3) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -51vh);
+    filter: hue-rotate(108deg);
+    animation: slide-3 ease-in-out 10s infinite;
+}
+
+@keyframes slide-3 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 51vh)
+            scale(0.35);
+    }
+}
+.layers p:nth-child(4) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -34vh);
+    filter: hue-rotate(144deg);
+    animation: slide-2 ease-in-out 10s infinite;
+}
+
+@keyframes slide-2 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 34vh)
+            scale(0.4);
+    }
+}
+.layers p:nth-child(5) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -17vh);
+    filter: hue-rotate(180deg);
+    animation: slide-1 ease-in-out 10s infinite;
+}
+
+@keyframes slide-1 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 17vh)
+            scale(0.45);
+    }
+}
+.layers p:nth-child(6) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 0vh);
+    filter: hue-rotate(216deg);
+    animation: slide0 ease-in-out 10s infinite;
+}
+
+@keyframes slide0 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 0vh)
+            scale(0.5);
+    }
+}
+.layers p:nth-child(7) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 17vh);
+    filter: hue-rotate(252deg);
+    animation: slide1 ease-in-out 10s infinite;
+}
+
+@keyframes slide1 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -17vh)
+            scale(0.55);
+    }
+}
+.layers p:nth-child(8) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 34vh);
+    filter: hue-rotate(288deg);
+    animation: slide2 ease-in-out 10s infinite;
+}
+
+@keyframes slide2 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -34vh)
+            scale(0.6);
+    }
+}
+.layers p:nth-child(9) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 51vh);
+    filter: hue-rotate(324deg);
+    animation: slide3 ease-in-out 10s infinite;
+}
+
+@keyframes slide3 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -51vh)
+            scale(0.65);
+    }
+}
+.layers p:nth-child(10) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 68vh);
+    filter: hue-rotate(360deg);
+    animation: slide4 ease-in-out 10s infinite;
+}
+
+@keyframes slide4 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -68vh)
+            scale(0.7);
+    }
+}
+.layers p:nth-child(11) {
+    transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, 85vh);
+    filter: hue-rotate(396deg);
+    animation: slide5 ease-in-out 10s infinite;
+}
+
+@keyframes slide5 {
+    50% {
+        transform: rotateX(45deg) rotateZ(45deg) translate3d(0vh, 0vh, -85vh)
+            scale(0.75);
+    }
+}
+
+.resume{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
+}
+
+#linkedIn, #github, #phone, #email{
+    width: 3vw;
+    height: 3vw;
+    margin-right: 2vw;
+}
+
+.contact-info{
+padding-left: 5vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.linked-div, .github-div, .phone-div, .email-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-and-pic{
+    display: flex;
+    /* flex-flow: row; */
+    justify-content: center;
+    height: 40vh;
+    margin-top: 25vh;
+    margin-bottom: 35vh;
+}
+
+#contact-img{
+    width: 25vw;
+    border-radius: 10px;
+}
